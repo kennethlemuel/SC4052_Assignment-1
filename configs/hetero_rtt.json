@@ -1,0 +1,20 @@
+{
+  "name": "hetero_rtt",
+  "dt": 0.01,
+  "duration": 20.0,
+  "link_capacity": 1000.0,
+  "ecn_threshold": 100.0,
+  "queue_max": 300.0,
+  "min_cwnd": 1.0,
+  "init_cwnd": 10.0,
+  "algorithms": ["reno", "dctcp", "risk_ecn"],
+  "reno": {"ai": 1.0, "md": 0.5},
+  "dctcp": {"g": 0.0625, "ai": 1.0},
+  "risk_ecn": {"ai": 1.0, "md": 0.3, "max_inc": 0.5, "q_target": 80.0},
+  "flows": [
+    {"id": "short1", "rtt": 0.02, "start": 0.0, "end": 20.0},
+    {"id": "short2", "rtt": 0.02, "start": 0.0, "end": 20.0},
+    {"id": "long1", "rtt": 0.2, "start": 0.0, "end": 20.0},
+    {"id": "long2", "rtt": 0.2, "start": 0.0, "end": 20.0}
+  ]
+}

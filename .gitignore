@@ -1,0 +1,15 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+
+# OS
+.DS_Store
+
+# Outputs
+runs/
+
+# Local requirements summary (do not commit)
+requirements.md
