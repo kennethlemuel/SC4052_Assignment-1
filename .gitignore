@@ -8,8 +8,9 @@ __pycache__/
 # OS
 .DS_Store
 
-# Outputs
-runs/
+# Report outputs (keep out of git)
+report/*.docx
+report/*.pdf
 
 # Local requirements summary (do not commit)
 requirements.md
