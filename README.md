@@ -9,15 +9,13 @@ pip install -r requirements.txt
 
 python src/run.py --config configs/steady.json
 
-
+# Instructions to fully run the code:
 ## Run all scenarios (per-scenario plots + metrics)
 python src/run_all.py
 
-
-## Generate summary plots across scenarios
-# Find latest run folder
+## Find latest run folder
 ls -t runs | head -n 1
 
-# Then generate summary plots
+## Then generate summary plots
 python src/plot_summary.py --run runs/<LATEST_TIMESTAMP> --all
 
